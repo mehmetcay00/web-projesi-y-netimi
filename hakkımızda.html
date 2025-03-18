@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #4e54c8;
+        }
+        .about-text {
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .team-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .team-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 200px;
+            padding: 15px;
+        }
+        .team-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .team-card h3 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #4e54c8;
+        }
+        .team-card p {
+            font-size: 14px;
+            color: #666;
+        }
+        .mission {
+            text-align: center;
+            background: #4e54c8;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .values {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .value-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+        }
+        .value-card i {
+            font-size: 30px;
+            color: #4e54c8;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hakkımızda</h1>
+
+        <p class="about-text">
+            2015 yılında kurulan **PatiDost**, sahipsiz hayvanlara güvenli bir yuva sağlamak için çalışmalarına başladı.  
+            Misyonumuz, her hayvana sevgi ve şefkatle yaklaşarak, onların mutlu bir yuvaya kavuşmalarını sağlamak.
+        </p>
+
+        <div class="mission">
+            <h2>Misyonumuz</h2>
+            <p>"Her canlının bir yuvası olmalı!"</p>
+        </div>
+
+        <h2>Ekibimiz</h2>
+        <div class="team-section">
+            <div class="team-card">
+                <img src="mehmet.jpg" alt="Mehmet">
+                <h3>Mehmet Çay</h3>
+                <p>Kurucu</p>
+            </div>
+            <div class="team-card">
+                <img src="akın.jpg" alt="Akın">
+                <h3>Akın Şakar</h3>
+                <p>Veteriner</p>
+            </div>
+            <div class="team-card">
+                <img src="yasin.jpg" alt="Yasin Özgür">
+                <h3>Yasin Özgür Çiçek</h3>
+                <p>Gönüllü Koordinatörü</p>
+            </div>
+        </div>
+
+        <h2>Değerlerimiz</h2>
+        <div class="values">
+            <div class="value-card">
+                <i class="fas fa-heart"></i>
+                <h3>Sevgi</h3>
+                <p>Hayvanlara sevgi ve şefkatle yaklaşırız.</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-paw"></i>
+                <h3>Koruma</h3>
+                <p>Sokak hayvanlarını koruyarak yeni yuvalara kavuştururuz.</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-users"></i>
+                <h3>Toplum</h3>
+                <p>Hayvan sevgisini topluma yaymak için çalışırız.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
