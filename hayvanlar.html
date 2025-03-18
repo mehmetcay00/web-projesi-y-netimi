@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayvanlarımız</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+        h1 {
+            text-align: center;
+            color: #4e54c8;
+        }
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .filter-buttons button {
+            background: #4e54c8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .filter-buttons button:hover {
+            background: #8f94fb;
+        }
+        .animals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .animal-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+        .animal-card:hover {
+            transform: translateY(-5px);
+        }
+        .animal-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .animal-content {
+            padding: 15px;
+        }
+        .animal-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #4e54c8;
+        }
+        .animal-info {
+            font-size: 14px;
+            color: #555;
+            margin: 5px 0;
+        }
+        .details-button {
+            display: block;
+            text-align: center;
+            background: #ff6b6b;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .details-button:hover {
+            background: #e63946;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🐾 Hayvanlarımız 🐾</h1>
+
+        <div class="filter-buttons">
+            <button onclick="filterAnimals('all')">Tümü</button>
+            <button onclick="filterAnimals('dog')">Köpekler</button>
+            <button onclick="filterAnimals('cat')">Kediler</button>
+            <button onclick="filterAnimals('other')">Diğer</button>
+        </div>
+
+        <div class="animals-grid">
+            <!-- Köpekler -->
+            <div class="animal-card" data-category="dog">
+                <img src="https://www.elityavru.com/images/irk-bilgileri/kopek-irki/golden-retriever.webp" alt="Golden Retriever">
+                <div class="animal-content">
+                    <div class="animal-title">Max (Golden Retriever)</div>
+                    <div class="animal-info">Yaş: 3</div>
+                    <div class="animal-info">Sağlık: Aşılı, Kısır</div>
+                    <a href="#" class="details-button">Detaylı Bilgi</a>
+                </div>
+            </div>
+
+            <div class="animal-card" data-category="dog">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Buddy_Clinton_dog.jpg" alt="Labrador">
+                <div class="animal-content">
+                    <div class="animal-title">Buddy (Labrador)</div>
+                    <div class="animal-info">Yaş: 2</div>
+                    <div class="animal-info">Sağlık: Aşılı, Kısır</div>
+                    <a href="#" class="details-button">Detaylı Bilgi</a>
+                </div>
+            </div>
+
+            <div class="animal-card" data-category="dog">
+                <img src="https://www.elityavru.com/images/irk-bilgileri/kopek-irki/siberian-husky.webp" alt="Husky">
+                <div class="animal-content">
+                    <div class="animal-title">Rocky (Sibirya Kurdu)</div>
+                    <div class="animal-info">Yaş: 4</div>
+                    <div class="animal-info">Sağlık: Aşılı, Kısır</div>
+                    <a href="#" class="details-button">Detaylı Bilgi</a>
+                </div>
+            </div>
+
+            <!-- Kediler -->
+            <div class="animal-card" data-category="cat">
+                <img src="https://www.renklipati.com/uploads/animals/big/tekir.jpg" alt="Tekir Kedi">
+                <div class="animal-content">
+                    <div class="animal-title">Luna (Tekir Kedi)</div>
+                    <div class="animal-info">Yaş: 2</div>
+                    <div class="animal-info">Sağlık: Aşılı, Kısır</div>
+                    <a href="#" class="details-button">Detaylı Bilgi</a>
+                </div>
+            </div>
+
+            <div class="animal-card" data-category="cat">
+                <img src="https://www.elityavru.com/images/irk-bilgileri/kedi-irki/persian-iran-kedisi-1-1.webp" alt="İran Kedisi">
+                <div class="animal-content">
+                    <div class="animal-title">Mia (İran Kedisi)</div>
+                    <div class="animal-info">Yaş: 3</div>
+                    <div class="animal-info">Sağlık: Aşılı, Kısır</div>
+                    <a href="#" class="details-button">Detaylı Bilgi</a>
+                </div>
+            </div>
+
+            <!-- Diğer Hayvanlar -->
+            <div class="animal-card" data-category="other">
+                <img src="https://ideacdn.net/idea/dt/62/myassets/blogs/tavsani-anlamak.jpg?revision=1697035098" alt="Tavşan">
+                <div class="animal-content">
+                    <div class="animal-title">Puffy (Tavşan)</div>
+                    <div class="animal-info">Yaş: 1</div>
+                    <div class="animal-info">Sağlık: Aşılı</div>
+                    <a href="#" class="details-button">Detaylı Bilgi</a>
+                </div>
+            </div>
+
+            <div class="animal-card" data-category="other">
+                <img src="https://www.patiliyo.com/wpuploads/2017/10/Ara-ararauna.jpg" alt="Papağan">
+                <div class="animal-content">
+                    <div class="animal-title">Coco (Papağan)</div>
+                    <div class="animal-info">Yaş: 5</div>
+                    <div class="animal-info">Sağlık: Aşılı</div>
+                    <a href="#" class="details-button">Detaylı Bilgi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function filterAnimals(category) {
+            document.querySelectorAll('.animal-card').forEach(card => {
+                card.style.display = category === 'all' || card.dataset.category === category ? 'block' : 'none';
+            });
+        }
+    </script>
+
+</body>
+</html>
