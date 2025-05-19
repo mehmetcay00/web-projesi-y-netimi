@@ -1,0 +1,85 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    color: #4e54c8;
+}
+.amount-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+.amount-buttons button {
+    background: #4e54c8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.amount-buttons button:hover, .amount-buttons button.active {
+    background: #8f94fb;
+}
+.custom-amount {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+.payment-form {
+    margin-top: 20px;
+}
+.payment-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+.payment-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.secure-payment {
+    text-align: center;
+    color: #28a745;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.secure-payment i {
+    color: #28a745;
+}
+.donate-button {
+    width: 100%;
+    padding: 12px;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.donate-button:hover {
+    background: #e63946;
+}
