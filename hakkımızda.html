@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="hakkımızda.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hakkımızda</h1>
+
+        <p class="about-text">
+            2015 yılında kurulan **PatiDost**, sahipsiz hayvanlara güvenli bir yuva sağlamak için çalışmalarına başladı.  
+            Misyonumuz, her hayvana sevgi ve şefkatle yaklaşarak, onların mutlu bir yuvaya kavuşmalarını sağlamak.
+        </p>
+
+        <div class="mission">
+            <h2>Misyonumuz</h2>
+            <p>"Her canlının bir yuvası olmalı!"</p>
+        </div>
+
+        <h2>Ekibimiz</h2>
+        <div class="team-section">
+            <div class="team-card">
+                <img src="mehmet.jpg" alt="Mehmet">
+                <h3>Mehmet Çay</h3>
+                <p>Kurucu</p>
+            </div>
+            <div class="team-card">
+                <img src="akın.jpg" alt="Akın">
+                <h3>Akın Şakar</h3>
+                <p>Veteriner</p>
+            </div>
+            <div class="team-card">
+                <img src="yasin.jpg" alt="Yasin Özgür">
+                <h3>Yasin Özgür Çiçek</h3>
+                <p>Gönüllü Koordinatörü</p>
+            </div>
+        </div>
+
+        <h2>Değerlerimiz</h2>
+        <div class="values">
+            <div class="value-card">
+                <i class="fas fa-heart"></i>
+                <h3>Sevgi</h3>
+                <p>Hayvanlara sevgi ve şefkatle yaklaşırız.</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-paw"></i>
+                <h3>Koruma</h3>
+                <p>Sokak hayvanlarını koruyarak yeni yuvalara kavuştururuz.</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-users"></i>
+                <h3>Toplum</h3>
+                <p>Hayvan sevgisini topluma yaymak için çalışırız.</p>
+            </div>
+        </div>
+    </div>
+    <section class="comments-section">
+        <div class="container">
+            <h2>Yorumlar</h2>
+            
+            <div class="comments-container" id="commentsContainer">
+                <!-- Mevcut yorumlar burada gösterilecek -->
+            </div>
+            
+            <div class="comment-form">
+                <h3>Yorum Yapın</h3>
+                <form id="commentForm">
+                    <div class="form-group">
+                        <label for="userName">Adınız*</label>
+                        <input type="text" id="userName" name="userName" required>
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="userComment">Yorumunuz*</label>
+                        <textarea id="userComment" name="userComment" rows="4" required></textarea>
+                        <span class="error-message" id="commentError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="userRating">Puanınız*</label>
+                        <div class="rating-container">
+                            <input type="radio" id="star5" name="userRating" value="5" required>
+                            <label for="star5">★</label>
+                            <input type="radio" id="star4" name="userRating" value="4">
+                            <label for="star4">★</label>
+                            <input type="radio" id="star3" name="userRating" value="3">
+                            <label for="star3">★</label>
+                            <input type="radio" id="star2" name="userRating" value="2">
+                            <label for="star2">★</label>
+                            <input type="radio" id="star1" name="userRating" value="1">
+                            <label for="star1">★</label>
+                        </div>
+                        <span class="error-message" id="ratingError"></span>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Yorum Gönder</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="hakkımızda.js"> </script>
+</body>
+</html>
