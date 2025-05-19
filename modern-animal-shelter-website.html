@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ev, Hayvanlar ve Barınak</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="websitesi.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-paw"></i> PatiDost
+                </div>
+                <div class="site-info">
+                    <div class="site-title">Ev, Hayvanlar ve Barınak</div>
+                    <div class="site-subtitle">Bir Hayvan Kurtarıcısı ve Barınağı</div>
+                </div>
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="nav-menu">
+            <button class="nav-button"><i class="fas fa-home"></i> <a href=anasayfa.html> ANASAYFA</button></a>
+			<button class="nav-button"><i class="fas fa-dog"></i> <a href=hayvanlar.html> HAYVANLAR</button></a>
+            <button class="nav-button"><i class="fas fa-hand-holding-heart"></i><a href=bagisyap.html> BAĞIŞ YAP</button></a>
+            <button class="nav-button"><i class="fas fa-envelope"></i> <a href=iletisim.html> İLETİŞİM</button> </a>
+            <button class="nav-button"><i class="fas fa-info-circle"></i> <a href=hakkımızda.html> HAKKIMIZDA</button> </a>
+        </div>
+
+        <div class="slogan fade-in">#YaşamaHakkıVer</div>
+
+        <div class="about-section fade-in">
+            <div class="about-text">
+                <h2 class="about-title">Barınak Hakkında</h2>
+                <p class="about-description">
+                    Barınağımıza gelen her hayvana, onlara doğru bakım ve refah sağlamak için büyük özen 
+                    göstermekteyiz. Tüm canları için huzurlu bir ortam yaratmak, onların iyi aileye 
+                    kavuşması için gerekli tüm süreçleri dikkatle uyguluyoruz.
+                </p>
+                <p class="about-description">
+                    Amacımız, her hayvana bir yuva bulmak, onların hayatlarını yeniden şekillendirmek 
+                    ve toplumda hayvan sevgisini yaygınlaştırmak.
+                </p>
+                <div class="action-buttons">
+                    <button class="button"><i class="fas fa-phone"></i> <a href=iletisim.html> Bize Ulaşın</button></a>
+                    <button class="button outlined"><i class="fas fa-heart"></i> <a href=bagisyap.html> Katkı Sağlayın</button></a>
+                </div>
+            </div>
+            <div class="about-image">
+                <i class="fas fa-heart placeholder-icon"></i>
+            </div>
+        </div>
+
+        <div class="animals-section fade-in">
+            <h2 class="section-title">HAYVANLARIMIZ</h2>
+            <div class="animals-grid">
+                <!-- Animal Card 1 -->
+                <div class="animal-card">
+                    <div class="animal-image">
+                        <i class="fas fa-dog placeholder-icon"></i>
+                    </div>
+                    <div class="animal-content">
+                        <div class="animal-title">Hayvan Bilgileri</div>
+                        <div class="animal-info"><i class="fas fa-paw"></i> Adı: Max</div>
+                        <div class="animal-info"><i class="fas fa-calendar-alt"></i> Yaş: 3 Yaş</div>
+                        <div class="animal-info"><i class="fas fa-home"></i> Durum: Barınakta / Golden Retriever</div>
+                        <div class="animal-info"><i class="fas fa-syringe"></i> Aşılılık: Tüm aşıları tamamlandı</div>
+                        <div class="animal-info"><i class="fas fa-heartbeat"></i> Sağlık Durumu: Sağlıklı / Kısırlaştırıldı</div>
+                        <a href="hayvan-detay.html?name=Max" class="read-more" target="_blank">Daha Fazla <i class="fas fa-arrow-right"></i></a>
+
+                    </div>
+                </div>
+
+                <!-- Animal Card 2 -->
+                <div class="animal-card">
+                    <div class="animal-image">
+                        <i class="fas fa-cat placeholder-icon"></i>
+                    </div>
+                    <div class="animal-content">
+                        <div class="animal-title">Hayvan Bilgileri</div>
+                        <div class="animal-info"><i class="fas fa-paw"></i> Adı: Luna</div>
+                        <div class="animal-info"><i class="fas fa-calendar-alt"></i> Yaş: 2 Yaş</div>
+                        <div class="animal-info"><i class="fas fa-home"></i> Durum: Barınakta / Tekir Kedi</div>
+                        <div class="animal-info"><i class="fas fa-syringe"></i> Aşılılık: Tüm aşıları tamamlandı</div>
+                        <div class="animal-info"><i class="fas fa-heartbeat"></i> Sağlık Durumu: Sağlıklı / Kısırlaştırıldı</div>
+                        <a href="hayvan-detay.html?name=Luna" class="read-more" target="_blank">Daha Fazla <i class="fas fa-arrow-right"></i></a>
+
+                    </div>
+                </div>
+
+                <!-- Animal Card 3 -->
+                <div class="animal-card">
+                    <div class="animal-image">
+                        <i class="fas fa-dog placeholder-icon"></i>
+                    </div>
+                    <div class="animal-content">
+                        <div class="animal-title">Hayvan Bilgileri</div>
+                        <div class="animal-info"><i class="fas fa-paw"></i> Adı: Karamel</div>
+                        <div class="animal-info"><i class="fas fa-calendar-alt"></i> Yaş: 1 Yaş</div>
+                        <div class="animal-info"><i class="fas fa-home"></i> Durum: Barınakta / Melez</div>
+                        <div class="animal-info"><i class="fas fa-syringe"></i> Aşılılık: Tüm aşıları tamamlandı</div>
+                        <div class="animal-info"><i class="fas fa-heartbeat"></i> Sağlık Durumu: Sağlıklı / Kısırlaştırıldı</div>
+                        <a href="hayvan-detay.html?name=Karamel" class="read-more" target="_blank">Daha Fazla <i class="fas fa-arrow-right"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Hakkımızda</h3>
+                    <p>PatiDost, sahipsiz hayvanların korunması, bakımı ve onlara yuva bulunması amacıyla 2015 yılında kurulmuş bir barınaktır.</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/?locale=tr_TR" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/?lang=tr" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Bağlantılar</h3>
+                    <div class="footer-links">
+                        <a href="anasayfa.html"><i class="fas fa-angle-right"></i> Anasayfa</a>
+                        <a href="hayvanlar.html"><i class="fas fa-angle-right"></i> Hayvanlar</a>
+                        <a href="bagisyap.html"><i class="fas fa-angle-right"></i> Bağış Yap</a>
+                        <a href="iletisim.html"><i class="fas fa-angle-right"></i> İletişim</a>
+                        <a href="hakkımızda.html"><i class="fas fa-angle-right"></i> Hakkımızda</a>
+                        
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>İletişim</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Köseoğlu Mahallesi No:123, Yozgat</p>
+                    <p><i class="fas fa-phone"></i> +90 545 501 03 66</p>
+                    <p><i class="fas fa-envelope"></i> info@patidost.com</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Bülten</h3>
+                    <p>Gelişmelerden haberdar olmak için bültenimize abone olun.</p>
+                    <form id="email-form">
+                        <input type="email" placeholder="E-posta adresiniz" style="width: 100%; padding: 10px; margin-bottom: 10px; border: none; border-radius: 5px;">
+                        <button type="button" class="button" style="width: 100%; margin: 0;">Abone Ol</button>
+                    </form>
+					
+                </div>
+            </div>
+            
+            <div class="copyright">
+                © 2025 PatiDost. Tüm Hakları Saklıdır. | Gizlilik Politikası | Hizmet Şartları
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header" onclick="toggleChat()">Canlı Destek <span id="chatToggleIcon">▲</span></div>
+        <div class="chat-body" id="chatBody">
+          <div class="chat-messages" id="chatMessages">
+            <div class="chat-message bot">
+              <div class="msg"><strong>PatiBot 🐾</strong><br>Merhaba! Size nasıl yardımcı olabilirim?</div>
+              <div class="time" id="botTime"></div>
+            </div>
+          </div>
+          <div class="faq-buttons">
+            <button onclick="quickReply('Çalışma saatleriniz nedir?')">📅 Çalışma Saatleri</button>
+            <button onclick="quickReply('Hayvan sahiplenmek için ne yapmalıyım?')">🏡 Sahiplenme</button>
+            <button onclick="quickReply('Bağış nasıl yapabilirim?')">💰 Bağış</button>
+          </div>
+          <div class="chat-input-area">
+            <input type="text" id="chatInput" placeholder="Mesajınızı yazın..." onkeydown="sendMessage(event)">
+            <button onclick="sendMessageManual()">Gönder</button>
+          </div>
+        </div>
+      </div>
+
+    <script src="websitesi.js"> </script>
+
+    </body>
+    </html>
+		
+         
