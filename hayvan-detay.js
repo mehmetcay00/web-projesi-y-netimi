@@ -1,6 +1,8 @@
  // URL’den parametreleri al
  const params = new URLSearchParams(window.location.search);
- const name = params.get("name");
+const name = params.get("name")?.toLowerCase();
+
+
 
  // Örnek hayvan bilgileri
  const animals = {
@@ -10,12 +12,13 @@
  };
 
  // Sayfaya bilgileri ekle
- if (name && animals[name]) {
-     document.getElementById("animalName").textContent = name;
-     document.getElementById("age").textContent = animals[name].age;
-     document.getElementById("status").textContent = animals[name].status;
-     document.getElementById("vaccinated").textContent = animals[name].vaccinated;
-     document.getElementById("health").textContent = animals[name].health;
- } else {
-     document.querySelector(".details").innerHTML = "<p>Bu hayvanın bilgileri bulunamadı.</p>";
- }
+if (name && animals[name]) {
+  document.getElementById("animalName").textContent = name.charAt(0).toUpperCase() + name.slice(1);
+  document.getElementById("age").textContent = animals[name].age;
+  document.getElementById("status").textContent = animals[name].status;
+  document.getElementById("vaccinated").textContent = animals[name].vaccinated;
+  document.getElementById("health").textContent = animals[name].health;
+} else {
+  document.querySelector(".details").innerHTML = `<p>Bu hayvanın bilgileri bulunamadı.</p>`;
+}
+
