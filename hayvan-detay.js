@@ -4,9 +4,9 @@
 
  // Örnek hayvan bilgileri
  const animals = {
-     "Max": { age: "3 Yaş", status: "Barınakta / Golden Retriever", vaccinated: "Tüm aşıları tamamlandı", health: "Sağlıklı / Kısırlaştırıldı" },
-     "Luna": { age: "2 Yaş", status: "Barınakta / Tekir Kedi", vaccinated: "Tüm aşıları tamamlandı", health: "Sağlıklı / Kısırlaştırıldı" },
-     "Karamel": { age: "1 Yaş", status: "Barınakta / Melez", vaccinated: "Tüm aşıları tamamlandı", health: "Sağlıklı / Kısırlaştırıldı" }
+     "max": { age: "3 Yaş", status: "Barınakta / Golden Retriever", vaccinated: "Tüm aşıları tamamlandı", health: "Sağlıklı / Kısırlaştırıldı" },
+     "luna": { age: "2 Yaş", status: "Barınakta / Tekir Kedi", vaccinated: "Tüm aşıları tamamlandı", health: "Sağlıklı / Kısırlaştırıldı" },
+     "karamel": { age: "1 Yaş", status: "Barınakta / Melez", vaccinated: "Tüm aşıları tamamlandı", health: "Sağlıklı / Kısırlaştırıldı" }
  };
 
  // Sayfaya bilgileri ekle
